@@ -15,7 +15,7 @@ func isAnagram(s string, t string) bool {
 
 	m := make(map[byte]int)
 
-	for i, _ := range s {
+	for i := range s {
 		m[s[i]]++
 		m[t[i]]--
 	}
